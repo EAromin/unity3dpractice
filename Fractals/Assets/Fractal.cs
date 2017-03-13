@@ -69,7 +69,7 @@ public class Fractal : MonoBehaviour {
         {
             if (Random.value < spawnProbability)
             {
-                yield return new WaitForSeconds(Random.Range(.1f, .5f));
+                yield return new WaitForSeconds(Random.Range(.5f, 2f));
                 new GameObject("Fractal Child").AddComponent<Fractal>().
                     Initialize(this, i);
             }
